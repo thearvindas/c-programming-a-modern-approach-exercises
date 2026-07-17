@@ -1,1 +1,1 @@
-End of chapter exercises from the book C Programming: A Modern Approach by K.N.King
+End of chapter exercises from the book C Programming: A Modern Approach by K.N.King. Haven't done too many of the exercises where it says modify an exercise from a prev chapter. Too lazy to scroll back in the book all the way to that page
