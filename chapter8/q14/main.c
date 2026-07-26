@@ -20,37 +20,37 @@ int main(void) {
             break;
         }
 
-        index++;
+        index++;                        
 
     }
 
     printf("Reversal of sentence: ");
 
-    int end = index;  
-    int start;  
-    int back_index = end - 1;
+    int end = index;
 
-    while (back_index >= 0) {
-        if (sentence[back_index] == ' ') {
-            start = back_index + 1;
-
-            for (int i = start; i < end; i++) {
+    while (index != 0) {     //I'm checking if I've finished traversing through the sentence
+        
+        if (sentence[index] == ' ') {
+            for (int i = index + 1; i < end; i++){
                 putchar(sentence[i]);
             }
 
-            end = back_index;
-            back_index--;
+            end = index;
+            putchar(' ');
         }
+        
+        index--;
 
-        else {
-            back_index--;
-        }
     }
 
+    
+    for (int i = 0; i < end; i++){
+        putchar(sentence[i]);
+    }
+    
+
     putchar(last);
-
-
-
+    putchar('\n');
 
     return 0;
 }
